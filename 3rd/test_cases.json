@@ -1,0 +1,1482 @@
+[
+  {
+    "id": "100",
+    "word": "pn",
+    "alph": [
+      "p",
+      "n"
+    ],
+    "k": "2",
+    "ans": "np"
+  },
+  {
+    "id": "99",
+    "word": "x",
+    "alph": [
+      "x"
+    ],
+    "k": "1",
+    "ans": "x"
+  },
+  {
+    "id": "98",
+    "word": "xz",
+    "alph": [
+      "x",
+      "z"
+    ],
+    "k": "2",
+    "ans": "xz"
+  },
+  {
+    "id": "97",
+    "word": "pkkprdvoljg",
+    "alph": [
+      "p",
+      "k",
+      "r",
+      "d",
+      "v",
+      "o",
+      "l",
+      "j",
+      "g"
+    ],
+    "k": "2",
+    "ans": "dgjkklopprv"
+  },
+  {
+    "id": "96",
+    "word": "tjjp",
+    "alph": [
+      "t",
+      "j",
+      "p"
+    ],
+    "k": "4",
+    "ans": "jjpt"
+  },
+  {
+    "id": "95",
+    "word": "aezgxp",
+    "alph": [
+      "a",
+      "e",
+      "z",
+      "g",
+      "x",
+      "p"
+    ],
+    "k": "6",
+    "ans": "aegpxz"
+  },
+  {
+    "id": "94",
+    "word": "eosn",
+    "alph": [
+      "e",
+      "o",
+      "s",
+      "n"
+    ],
+    "k": "4",
+    "ans": "enos"
+  },
+  {
+    "id": "93",
+    "word": "mpzdxjkgamstdl",
+    "alph": [
+      "m",
+      "p",
+      "z",
+      "d",
+      "x",
+      "j",
+      "k",
+      "g",
+      "a",
+      "s",
+      "t",
+      "l"
+    ],
+    "k": "6",
+    "ans": "addgjklmmpstxz"
+  },
+  {
+    "id": "92",
+    "word": "fdjgtxayaj",
+    "alph": [
+      "f",
+      "d",
+      "j",
+      "g",
+      "t",
+      "x",
+      "a",
+      "y"
+    ],
+    "k": "5",
+    "ans": "aadfgjjtxy"
+  },
+  {
+    "id": "91",
+    "word": "aiqskzxriinkv",
+    "alph": [
+      "a",
+      "i",
+      "q",
+      "s",
+      "k",
+      "z",
+      "x",
+      "r",
+      "n",
+      "v"
+    ],
+    "k": "12",
+    "ans": "aiiikknqrsvxz"
+  },
+  {
+    "id": "90",
+    "word": "vruldhznbxgxb",
+    "alph": [
+      "v",
+      "r",
+      "u",
+      "l",
+      "d",
+      "h",
+      "z",
+      "n",
+      "b",
+      "x",
+      "g"
+    ],
+    "k": "9",
+    "ans": "bbdghlnruvxxz"
+  },
+  {
+    "id": "89",
+    "word": "vnrrwustfecf",
+    "alph": [
+      "v",
+      "n",
+      "r",
+      "w",
+      "u",
+      "s",
+      "t",
+      "f",
+      "e",
+      "c"
+    ],
+    "k": "6",
+    "ans": "ceffnrrstuvw"
+  },
+  {
+    "id": "88",
+    "word": "aqpololp",
+    "alph": [
+      "a",
+      "q",
+      "p",
+      "o",
+      "l"
+    ],
+    "k": "7",
+    "ans": "allooppq"
+  },
+  {
+    "id": "87",
+    "word": "gkxmjsbeer",
+    "alph": [
+      "g",
+      "k",
+      "x",
+      "m",
+      "j",
+      "s",
+      "b",
+      "e",
+      "r"
+    ],
+    "k": "9",
+    "ans": "beegjkmrsx"
+  },
+  {
+    "id": "86",
+    "word": "ldn",
+    "alph": [
+      "l",
+      "d",
+      "n"
+    ],
+    "k": "3",
+    "ans": "dln"
+  },
+  {
+    "id": "85",
+    "word": "rjmvivveyw",
+    "alph": [
+      "r",
+      "j",
+      "m",
+      "v",
+      "i",
+      "e",
+      "y",
+      "w"
+    ],
+    "k": "7",
+    "ans": "eijmrvvvwy"
+  },
+  {
+    "id": "84",
+    "word": "boarbyvgtc",
+    "alph": [
+      "b",
+      "o",
+      "a",
+      "r",
+      "y",
+      "v",
+      "g",
+      "t",
+      "c"
+    ],
+    "k": "3",
+    "ans": "abbcgortvy"
+  },
+  {
+    "id": "83",
+    "word": "r",
+    "alph": [
+      "r"
+    ],
+    "k": "1",
+    "ans": "r"
+  },
+  {
+    "id": "82",
+    "word": "enled",
+    "alph": [
+      "e",
+      "n",
+      "l",
+      "d"
+    ],
+    "k": "3",
+    "ans": "deeln"
+  },
+  {
+    "id": "81",
+    "word": "eyx",
+    "alph": [
+      "e",
+      "y",
+      "x"
+    ],
+    "k": "2",
+    "ans": "exy"
+  },
+  {
+    "id": "80",
+    "word": "bukinxveuwtexvb",
+    "alph": [
+      "b",
+      "u",
+      "k",
+      "i",
+      "n",
+      "x",
+      "v",
+      "e",
+      "w",
+      "t"
+    ],
+    "k": "14",
+    "ans": "bbeeikntuuvvwxx"
+  },
+  {
+    "id": "79",
+    "word": "pjwxqffss",
+    "alph": [
+      "p",
+      "j",
+      "w",
+      "x",
+      "q",
+      "f",
+      "s"
+    ],
+    "k": "9",
+    "ans": "ffjpqsswx"
+  },
+  {
+    "id": "78",
+    "word": "pkt",
+    "alph": [
+      "p",
+      "k",
+      "t"
+    ],
+    "k": "3",
+    "ans": "kpt"
+  },
+  {
+    "id": "77",
+    "word": "wwkxznwepbx",
+    "alph": [
+      "w",
+      "k",
+      "x",
+      "z",
+      "n",
+      "e",
+      "p",
+      "b"
+    ],
+    "k": "5",
+    "ans": "beknpwwwxxz"
+  },
+  {
+    "id": "76",
+    "word": "yxabkygcpeugf",
+    "alph": [
+      "y",
+      "x",
+      "a",
+      "b",
+      "k",
+      "g",
+      "c",
+      "p",
+      "e",
+      "u",
+      "f"
+    ],
+    "k": "3",
+    "ans": "abcefggkpuxyy"
+  },
+  {
+    "id": "75",
+    "word": "sjafuubqoorxcc",
+    "alph": [
+      "s",
+      "j",
+      "a",
+      "f",
+      "u",
+      "b",
+      "q",
+      "o",
+      "r",
+      "x",
+      "c"
+    ],
+    "k": "14",
+    "ans": "abccfjooqrsuux"
+  },
+  {
+    "id": "74",
+    "word": "hgmjtlrbaz",
+    "alph": [
+      "h",
+      "g",
+      "m",
+      "j",
+      "t",
+      "l",
+      "r",
+      "b",
+      "a",
+      "z"
+    ],
+    "k": "10",
+    "ans": "abghjlmrtz"
+  },
+  {
+    "id": "73",
+    "word": "xvwuyxpzvrna",
+    "alph": [
+      "x",
+      "v",
+      "w",
+      "u",
+      "y",
+      "p",
+      "z",
+      "r",
+      "n",
+      "a"
+    ],
+    "k": "6",
+    "ans": "anpruvvwxxyz"
+  },
+  {
+    "id": "72",
+    "word": "g",
+    "alph": [
+      "g"
+    ],
+    "k": "1",
+    "ans": "g"
+  },
+  {
+    "id": "71",
+    "word": "nkobqrutcdvn",
+    "alph": [
+      "n",
+      "k",
+      "o",
+      "b",
+      "q",
+      "r",
+      "u",
+      "t",
+      "c",
+      "d",
+      "v"
+    ],
+    "k": "5",
+    "ans": "bcdknnoqrtuv"
+  },
+  {
+    "id": "70",
+    "word": "xbwcpsg",
+    "alph": [
+      "x",
+      "b",
+      "w",
+      "c",
+      "p",
+      "s",
+      "g"
+    ],
+    "k": "2",
+    "ans": "bcgpswx"
+  },
+  {
+    "id": "69",
+    "word": "wfwoqsjvkt",
+    "alph": [
+      "w",
+      "f",
+      "o",
+      "q",
+      "s",
+      "j",
+      "v",
+      "k",
+      "t"
+    ],
+    "k": "6",
+    "ans": "fjkoqstvww"
+  },
+  {
+    "id": "68",
+    "word": "jgtblrijotbxv",
+    "alph": [
+      "j",
+      "g",
+      "t",
+      "b",
+      "l",
+      "r",
+      "i",
+      "o",
+      "x",
+      "v"
+    ],
+    "k": "10",
+    "ans": "bbgijjlorttvx"
+  },
+  {
+    "id": "67",
+    "word": "gbqayywv",
+    "alph": [
+      "g",
+      "b",
+      "q",
+      "a",
+      "y",
+      "w",
+      "v"
+    ],
+    "k": "6",
+    "ans": "abgqvwyy"
+  },
+  {
+    "id": "66",
+    "word": "nct",
+    "alph": [
+      "n",
+      "c",
+      "t"
+    ],
+    "k": "1",
+    "ans": "cnt"
+  },
+  {
+    "id": "65",
+    "word": "jfvcuds",
+    "alph": [
+      "j",
+      "f",
+      "v",
+      "c",
+      "u",
+      "d",
+      "s"
+    ],
+    "k": "7",
+    "ans": "cdfjsuv"
+  },
+  {
+    "id": "64",
+    "word": "bbihguaelnsn",
+    "alph": [
+      "b",
+      "i",
+      "h",
+      "g",
+      "u",
+      "a",
+      "e",
+      "l",
+      "n",
+      "s"
+    ],
+    "k": "7",
+    "ans": "abbeghilnnsu"
+  },
+  {
+    "id": "63",
+    "word": "kvyjdeooqcioc",
+    "alph": [
+      "k",
+      "v",
+      "y",
+      "j",
+      "d",
+      "e",
+      "o",
+      "q",
+      "c",
+      "i"
+    ],
+    "k": "2",
+    "ans": "ccdeijkoooqvy"
+  },
+  {
+    "id": "62",
+    "word": "vkqph",
+    "alph": [
+      "v",
+      "k",
+      "q",
+      "p",
+      "h"
+    ],
+    "k": "3",
+    "ans": "hkpqv"
+  },
+  {
+    "id": "61",
+    "word": "qmliobgzdp",
+    "alph": [
+      "q",
+      "m",
+      "l",
+      "i",
+      "o",
+      "b",
+      "g",
+      "z",
+      "d",
+      "p"
+    ],
+    "k": "3",
+    "ans": "bdgilmopqz"
+  },
+  {
+    "id": "60",
+    "word": "neadnuyyjzwf",
+    "alph": [
+      "n",
+      "e",
+      "a",
+      "d",
+      "u",
+      "y",
+      "j",
+      "z",
+      "w",
+      "f"
+    ],
+    "k": "1",
+    "ans": "adefjnnuwyyz"
+  },
+  {
+    "id": "59",
+    "word": "ko",
+    "alph": [
+      "k",
+      "o"
+    ],
+    "k": "1",
+    "ans": "ko"
+  },
+  {
+    "id": "58",
+    "word": "fjyyujq",
+    "alph": [
+      "f",
+      "j",
+      "y",
+      "u",
+      "q"
+    ],
+    "k": "1",
+    "ans": "fjjquyy"
+  },
+  {
+    "id": "57",
+    "word": "zrjnzkv",
+    "alph": [
+      "z",
+      "r",
+      "j",
+      "n",
+      "k",
+      "v"
+    ],
+    "k": "2",
+    "ans": "jknrvzz"
+  },
+  {
+    "id": "56",
+    "word": "kcxxsym",
+    "alph": [
+      "k",
+      "c",
+      "x",
+      "s",
+      "y",
+      "m"
+    ],
+    "k": "6",
+    "ans": "ckmsxxy"
+  },
+  {
+    "id": "55",
+    "word": "cblinvjkyao",
+    "alph": [
+      "c",
+      "b",
+      "l",
+      "i",
+      "n",
+      "v",
+      "j",
+      "k",
+      "y",
+      "a",
+      "o"
+    ],
+    "k": "1",
+    "ans": "abcijklnovy"
+  },
+  {
+    "id": "54",
+    "word": "zjatv",
+    "alph": [
+      "z",
+      "j",
+      "a",
+      "t",
+      "v"
+    ],
+    "k": "5",
+    "ans": "ajtvz"
+  },
+  {
+    "id": "53",
+    "word": "ek",
+    "alph": [
+      "e",
+      "k"
+    ],
+    "k": "1",
+    "ans": "ek"
+  },
+  {
+    "id": "52",
+    "word": "bkfccch",
+    "alph": [
+      "b",
+      "k",
+      "f",
+      "c",
+      "h"
+    ],
+    "k": "7",
+    "ans": "bcccfhk"
+  },
+  {
+    "id": "51",
+    "word": "sbaab",
+    "alph": [
+      "s",
+      "b",
+      "a"
+    ],
+    "k": "4",
+    "ans": "aabbs"
+  },
+  {
+    "id": "50",
+    "word": "jhzswitzvqhb",
+    "alph": [
+      "j",
+      "h",
+      "z",
+      "s",
+      "w",
+      "i",
+      "t",
+      "v",
+      "q",
+      "b"
+    ],
+    "k": "12",
+    "ans": "bhhijqstvwzz"
+  },
+  {
+    "id": "49",
+    "word": "ieitdeqlqswr",
+    "alph": [
+      "i",
+      "e",
+      "t",
+      "d",
+      "q",
+      "l",
+      "s",
+      "w",
+      "r"
+    ],
+    "k": "11",
+    "ans": "deeiilqqrstw"
+  },
+  {
+    "id": "48",
+    "word": "jwjmgcrj",
+    "alph": [
+      "j",
+      "w",
+      "m",
+      "g",
+      "c",
+      "r"
+    ],
+    "k": "1",
+    "ans": "-1"
+  },
+  {
+    "id": "47",
+    "word": "yhjazqhnzyplhq",
+    "alph": [
+      "y",
+      "h",
+      "j",
+      "a",
+      "z",
+      "q",
+      "n",
+      "p",
+      "l"
+    ],
+    "k": "8",
+    "ans": "ahhhjlnpqqyyzz"
+  },
+  {
+    "id": "46",
+    "word": "aegmabdbnhqrgxx",
+    "alph": [
+      "a",
+      "e",
+      "g",
+      "m",
+      "b",
+      "d",
+      "n",
+      "h",
+      "q",
+      "r",
+      "x"
+    ],
+    "k": "7",
+    "ans": "aabbdegghmnqrxx"
+  },
+  {
+    "id": "45",
+    "word": "t",
+    "alph": [
+      "t"
+    ],
+    "k": "1",
+    "ans": "t"
+  },
+  {
+    "id": "44",
+    "word": "sekladwnm",
+    "alph": [
+      "s",
+      "e",
+      "k",
+      "l",
+      "a",
+      "d",
+      "w",
+      "n",
+      "m"
+    ],
+    "k": "5",
+    "ans": "adeklmnsw"
+  },
+  {
+    "id": "43",
+    "word": "cv",
+    "alph": [
+      "c",
+      "v"
+    ],
+    "k": "2",
+    "ans": "cv"
+  },
+  {
+    "id": "42",
+    "word": "mhsvjlpyjwnpd",
+    "alph": [
+      "m",
+      "h",
+      "s",
+      "v",
+      "j",
+      "l",
+      "p",
+      "y",
+      "w",
+      "n",
+      "d"
+    ],
+    "k": "13",
+    "ans": "dhjjlmnppsvwy"
+  },
+  {
+    "id": "41",
+    "word": "sym",
+    "alph": [
+      "s",
+      "y",
+      "m"
+    ],
+    "k": "2",
+    "ans": "msy"
+  },
+  {
+    "id": "40",
+    "word": "b",
+    "alph": [
+      "b"
+    ],
+    "k": "1",
+    "ans": "b"
+  },
+  {
+    "id": "39",
+    "word": "dzbgrzhfqgdfcs",
+    "alph": [
+      "d",
+      "z",
+      "b",
+      "g",
+      "r",
+      "h",
+      "f",
+      "q",
+      "c",
+      "s"
+    ],
+    "k": "5",
+    "ans": "bcddffgghqrszz"
+  },
+  {
+    "id": "38",
+    "word": "cudi",
+    "alph": [
+      "c",
+      "u",
+      "d",
+      "i"
+    ],
+    "k": "1",
+    "ans": "cdiu"
+  },
+  {
+    "id": "37",
+    "word": "kpszojzhqiuy",
+    "alph": [
+      "k",
+      "p",
+      "s",
+      "z",
+      "o",
+      "j",
+      "h",
+      "q",
+      "i",
+      "u",
+      "y"
+    ],
+    "k": "8",
+    "ans": "hijkopqsuyzz"
+  },
+  {
+    "id": "36",
+    "word": "mbydexfw",
+    "alph": [
+      "m",
+      "b",
+      "y",
+      "d",
+      "e",
+      "x",
+      "f",
+      "w"
+    ],
+    "k": "3",
+    "ans": "bdefmwxy"
+  },
+  {
+    "id": "35",
+    "word": "mtondtpmml",
+    "alph": [
+      "m",
+      "t",
+      "o",
+      "n",
+      "d",
+      "p",
+      "l"
+    ],
+    "k": "10",
+    "ans": "dlmmmnoptt"
+  },
+  {
+    "id": "34",
+    "word": "yvkyk",
+    "alph": [
+      "y",
+      "v",
+      "k"
+    ],
+    "k": "2",
+    "ans": "kkvyy"
+  },
+  {
+    "id": "33",
+    "word": "xkympgx",
+    "alph": [
+      "x",
+      "k",
+      "y",
+      "m",
+      "p",
+      "g"
+    ],
+    "k": "3",
+    "ans": "gkmpxxy"
+  },
+  {
+    "id": "32",
+    "word": "ldnzbftaddxnehw",
+    "alph": [
+      "l",
+      "d",
+      "n",
+      "z",
+      "b",
+      "f",
+      "t",
+      "a",
+      "x",
+      "e",
+      "h",
+      "w"
+    ],
+    "k": "15",
+    "ans": "abdddefhlnntwxz"
+  },
+  {
+    "id": "31",
+    "word": "mvforlyqyphcec",
+    "alph": [
+      "m",
+      "v",
+      "f",
+      "o",
+      "r",
+      "l",
+      "y",
+      "q",
+      "p",
+      "h",
+      "c",
+      "e"
+    ],
+    "k": "5",
+    "ans": "ccefhlmopqrvyy"
+  },
+  {
+    "id": "30",
+    "word": "gpxjlko",
+    "alph": [
+      "g",
+      "p",
+      "x",
+      "j",
+      "l",
+      "k",
+      "o"
+    ],
+    "k": "5",
+    "ans": "gjklopx"
+  },
+  {
+    "id": "29",
+    "word": "eazhbml",
+    "alph": [
+      "e",
+      "a",
+      "z",
+      "h",
+      "b",
+      "m",
+      "l"
+    ],
+    "k": "3",
+    "ans": "abehlmz"
+  },
+  {
+    "id": "28",
+    "word": "ukkb",
+    "alph": [
+      "u",
+      "k",
+      "b"
+    ],
+    "k": "4",
+    "ans": "bkku"
+  },
+  {
+    "id": "27",
+    "word": "ehzirvfvwb",
+    "alph": [
+      "e",
+      "h",
+      "z",
+      "i",
+      "r",
+      "v",
+      "f",
+      "w",
+      "b"
+    ],
+    "k": "3",
+    "ans": "befhirvvwz"
+  },
+  {
+    "id": "26",
+    "word": "jfilevesbadhcx",
+    "alph": [
+      "j",
+      "f",
+      "i",
+      "l",
+      "e",
+      "v",
+      "s",
+      "b",
+      "a",
+      "d",
+      "h",
+      "c",
+      "x"
+    ],
+    "k": "9",
+    "ans": "abcdeefhijlsvx"
+  },
+  {
+    "id": "25",
+    "word": "e",
+    "alph": [
+      "e"
+    ],
+    "k": "1",
+    "ans": "e"
+  },
+  {
+    "id": "24",
+    "word": "d",
+    "alph": [
+      "d"
+    ],
+    "k": "1",
+    "ans": "d"
+  },
+  {
+    "id": "23",
+    "word": "iqtxk",
+    "alph": [
+      "i",
+      "q",
+      "t",
+      "x",
+      "k"
+    ],
+    "k": "1",
+    "ans": "ikqtx"
+  },
+  {
+    "id": "22",
+    "word": "lcxaknpxyogfhqe",
+    "alph": [
+      "l",
+      "c",
+      "x",
+      "a",
+      "k",
+      "n",
+      "p",
+      "y",
+      "o",
+      "g",
+      "f",
+      "h",
+      "q",
+      "e"
+    ],
+    "k": "11",
+    "ans": "acefghklnopqxxy"
+  },
+  {
+    "id": "21",
+    "word": "xjpk",
+    "alph": [
+      "x",
+      "j",
+      "p",
+      "k"
+    ],
+    "k": "4",
+    "ans": "jkpx"
+  },
+  {
+    "id": "20",
+    "word": "lndsvwl",
+    "alph": [
+      "l",
+      "n",
+      "d",
+      "s",
+      "v",
+      "w"
+    ],
+    "k": "5",
+    "ans": "dllnsvw"
+  },
+  {
+    "id": "19",
+    "word": "cwjomlavvt",
+    "alph": [
+      "c",
+      "w",
+      "j",
+      "o",
+      "m",
+      "l",
+      "a",
+      "v",
+      "t"
+    ],
+    "k": "7",
+    "ans": "acjlmotvvw"
+  },
+  {
+    "id": "18",
+    "word": "zdsvcr",
+    "alph": [
+      "z",
+      "d",
+      "s",
+      "v",
+      "c",
+      "r"
+    ],
+    "k": "5",
+    "ans": "cdrsvz"
+  },
+  {
+    "id": "17",
+    "word": "tjjqtihsul",
+    "alph": [
+      "t",
+      "j",
+      "q",
+      "i",
+      "h",
+      "s",
+      "u",
+      "l"
+    ],
+    "k": "7",
+    "ans": "hijjlqsttu"
+  },
+  {
+    "id": "16",
+    "word": "nowdlicwvah",
+    "alph": [
+      "n",
+      "o",
+      "w",
+      "d",
+      "l",
+      "i",
+      "c",
+      "v",
+      "a",
+      "h"
+    ],
+    "k": "9",
+    "ans": "acdhilnovww"
+  },
+  {
+    "id": "15",
+    "word": "dh",
+    "alph": [
+      "d",
+      "h"
+    ],
+    "k": "1",
+    "ans": "dh"
+  },
+  {
+    "id": "14",
+    "word": "tkwiyuks",
+    "alph": [
+      "t",
+      "k",
+      "w",
+      "i",
+      "y",
+      "u",
+      "s"
+    ],
+    "k": "2",
+    "ans": "ikkstuwy"
+  },
+  {
+    "id": "13",
+    "word": "ts",
+    "alph": [
+      "t",
+      "s"
+    ],
+    "k": "1",
+    "ans": "st"
+  },
+  {
+    "id": "12",
+    "word": "ehjmy",
+    "alph": [
+      "e",
+      "h",
+      "j",
+      "m",
+      "y"
+    ],
+    "k": "5",
+    "ans": "ehjmy"
+  },
+  {
+    "id": "11",
+    "word": "n",
+    "alph": [
+      "n"
+    ],
+    "k": "1",
+    "ans": "n"
+  },
+  {
+    "id": "10",
+    "word": "edjpk",
+    "alph": [
+      "e",
+      "d",
+      "j",
+      "p",
+      "k"
+    ],
+    "k": "4",
+    "ans": "dejkp"
+  },
+  {
+    "id": "9",
+    "word": "ctmyekxr",
+    "alph": [
+      "c",
+      "t",
+      "m",
+      "y",
+      "e",
+      "k",
+      "x",
+      "r"
+    ],
+    "k": "1",
+    "ans": "cekmrtxy"
+  },
+  {
+    "id": "8",
+    "word": "jr",
+    "alph": [
+      "j",
+      "r"
+    ],
+    "k": "2",
+    "ans": "jr"
+  },
+  {
+    "id": "7",
+    "word": "mxikb",
+    "alph": [
+      "m",
+      "x",
+      "i",
+      "k",
+      "b"
+    ],
+    "k": "1",
+    "ans": "bikmx"
+  },
+  {
+    "id": "6",
+    "word": "vbpsndwsrwrmk",
+    "alph": [
+      "v",
+      "b",
+      "p",
+      "s",
+      "n",
+      "d",
+      "w",
+      "r",
+      "m",
+      "k"
+    ],
+    "k": "4",
+    "ans": "bdkmnprrssvww"
+  },
+  {
+    "id": "5",
+    "word": "poybbcevlf",
+    "alph": [
+      "p",
+      "o",
+      "y",
+      "b",
+      "c",
+      "e",
+      "v",
+      "l",
+      "f"
+    ],
+    "k": "10",
+    "ans": "bbceflopvy"
+  },
+  {
+    "id": "4",
+    "word": "qowbwuztkbgt",
+    "alph": [
+      "q",
+      "o",
+      "w",
+      "b",
+      "u",
+      "z",
+      "t",
+      "k",
+      "g"
+    ],
+    "k": "9",
+    "ans": "bbgkoqttuwwz"
+  },
+  {
+    "id": "3",
+    "word": "qvivrakaghooqud",
+    "alph": [
+      "q",
+      "v",
+      "i",
+      "r",
+      "a",
+      "k",
+      "g",
+      "h",
+      "o",
+      "u",
+      "d"
+    ],
+    "k": "5",
+    "ans": "aadghikooqqruvv"
+  },
+  {
+    "id": "2",
+    "word": "qddisngxmtp",
+    "alph": [
+      "q",
+      "d",
+      "i",
+      "s",
+      "n",
+      "g",
+      "x",
+      "m",
+      "t",
+      "p"
+    ],
+    "k": "3",
+    "ans": "ddgimnpqstx"
+  },
+  {
+    "id": "1",
+    "word": "uhxrusycxnzem",
+    "alph": [
+      "u",
+      "h",
+      "x",
+      "r",
+      "s",
+      "y",
+      "c",
+      "n",
+      "z",
+      "e",
+      "m"
+    ],
+    "k": "7",
+    "ans": "cehmnrsuuxxyz"
+  }
+]
