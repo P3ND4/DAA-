@@ -6,11 +6,19 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
                              'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 
-
+def freq_dif(string):
+    char_freq = {}
+    for char in string:
+        char_freq[char] = char_freq.get(char, 0) + 1
+    
+    max_freq = max(char_freq.values())
+    min_freq = min(char_freq.values())
+    
+    return max_freq - min_freq
 
 def permutations(text: str, k: int) -> tuple[bool, str]:
   contain = set()
-  return permutations_rec(text, contain, '', k)
+  return permutations_rec(text, contain, '', k) if freq_dif(text) <= k else False, text
 
 def permutations_rec(text: str, contain: set, carry: str, k: int) -> None:
   if text == '':
@@ -88,7 +96,7 @@ def generate_cases(case = 100, max_len = 15):
         cases.append(test_case)
         case = case -1
 
-    with open('test_cases.json', 'w') as f:
+    with open('3rd/test_cases.json', 'w') as f:
         json.dump(cases, f, indent=2)
 
 #print(permutations('jwjmgcrj', 1))

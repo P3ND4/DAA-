@@ -10,7 +10,7 @@ with open("3rd/test_cases.json") as file:
 for item in data:
     result = solve(item['word'], item["alph"], int(item["k"]))
     try:
-        assert result == item['ans']
+        assert str(result) == item['ans']
         case = item['id']
         print(f"Case {case} ======== OK")
     except:
