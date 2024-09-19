@@ -61,11 +61,11 @@ def organize_string(input_string):
 
 
 
-def generate_cases(case = 100):
+def generate_cases(case = 100, max_len = 15):
     cases = []
     while(case):
         boolean_mask = [False]*len(alphabet)
-        str_len = rnd.randint(1, 15)
+        str_len = rnd.randint(1, max_len)
         str_case = ''
         symbols_set = []
         for i in range (0, str_len):
@@ -91,8 +91,8 @@ def generate_cases(case = 100):
     with open('test_cases.json', 'w') as f:
         json.dump(cases, f, indent=2)
 
-print(permutations('jwjmgcrj', 1))
-#generate_cases()
+#print(permutations('jwjmgcrj', 1))
+generate_cases(max_len=20)
 
 
 
