@@ -4,7 +4,7 @@ def solve(query: str, alph: list, k: int):
     '''
         Query: cadena de texto que deseamos consultar 
         \n
-        Alph: symbolos involucarados en queru
+        Alph: symbolos involucarados en query
         \n
         k: la onstante que define cuando es buena la cadena de texto
     '''
