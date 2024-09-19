@@ -100,7 +100,7 @@ def generate_cases(case = 100, max_len = 15):
         json.dump(cases, f, indent=2)
 
 #print(permutations('jwjmgcrj', 1))
-generate_cases(max_len=50)
+generate_cases(max_len=100)
 
 
 
