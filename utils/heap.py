@@ -3,8 +3,8 @@ class MinHeap:
     def __init__(self):
         self.heap = []
 
-    def insert(self, val, freq):
-        self.heap.append((val, freq))
+    def insert(self, val, freq, adj=-1):
+        self.heap.append((val, freq, adj))
         self.heapify_up(len(self.heap) - 1)
 
     def extract_min(self):

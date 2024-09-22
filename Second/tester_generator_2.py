@@ -1,6 +1,5 @@
 import random as rnd
 
-
 def genrate_conected_graph(max_len, max_w):
     v_count = rnd.randint(0, max_len)
     adj = []
