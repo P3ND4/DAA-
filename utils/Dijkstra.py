@@ -1,4 +1,7 @@
-from utils.heap import MinHeap
+try:
+    from utils.heap import MinHeap
+except:
+    from heap import MinHeap
 import math
 def Dijkstra(adj: list[list[tuple[int, int]]]):
     d = [math.inf]*len(adj)
@@ -21,3 +24,19 @@ def Dijkstra(adj: list[list[tuple[int, int]]]):
 
 def relax(vertex: int, edge_weight: int, adjacent: int, d: list[int]):
     d[vertex] = min(edge_weight+ d[adjacent], d[vertex])
+
+
+
+
+adj = [
+    [(1,25), (5, 5)],
+    [(0, 25), (8, 5)],
+    [(5, 10), (8, 10), (3, 3), (4,10)],
+    [(2, 3), (4,27)],
+    [(2,10), (3,27)],
+    [(0,5),(2, 10),(6, 30)],
+    [(5, 30), (7, 1)],
+    [(6, 1)],
+    [(1, 5), (2, 10)]
+    ]
+print(Dijkstra(adj))
