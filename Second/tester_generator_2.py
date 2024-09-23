@@ -21,7 +21,7 @@ def tester_generator(n=100, max_len=30, max_w = 100):
             "test_case": f'{100-n+1}',
             "adj": [[str(x) for x in y] for y in adj],
             "edges": [[str(x) for x in y] for y in edges],
-            "result": [[str(x) for x in y] for y in result]
+            "result": [ str(x) for x in result]
         }
         test_cases.append(test_case)   
         n -= 1           
