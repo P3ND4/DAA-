@@ -41,14 +41,10 @@ def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], no
         
       min_path_rec(adj, matrix, nodes_adds, visited, node)
     
-    
-    elif e < matrix[head][node][0]:
-      matrix[head][node] = (e, set(((min(head, node), max(node, head)),)))
-      matrix[node][head] = (e, set(((min(head, node), max(node, head)),)))
-
+    elif e <= matrix[head][node][0]:
       for x in nodes_adds:
-        if x != node and x != head:
-          if matrix[x][head][0] > matrix[x][node][0] + e:
+        if x != head:
+          if matrix[x][head][0] >= matrix[x][node][0] + e:
             aux = set(matrix[x][node][1])
             aux.add((min(head, node), max(head, node)))
             
@@ -60,7 +56,7 @@ def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], no
               matrix[x][head] = (matrix[x][node][0] + e, aux)
               matrix[head][x] = (matrix[x][node][0] + e, aux)
 
-          if matrix[x][node][0] > matrix[x][head][0] + e:
+          if matrix[x][node][0] >= matrix[x][head][0] + e:
             aux = set(matrix[x][head][1])
             aux.add((head, node))
             
