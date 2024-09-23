@@ -15,7 +15,7 @@ def tester_generator(n=100, max_len=30, max_w = 100):
                 if i == j:
                     result[i].append(0)
                     continue
-                result[i].append(len(res[j])) 
+                result[i].append(res[1][j]) 
 
         test_case = {
             "test_case": f'{100-n+1}',
@@ -85,7 +85,7 @@ def minimun_path(vertex:int, adj: list[list[int]], edges: list[list[int]]):
     distance = [math.inf]*len(adj)
     distance[vertex] = 0
     recursive_min(vertex, vertex, adj, edges, [False]*len(adj), result,distance, 0)
-    return result
+    return result, distance
 
 
 def recursive_min(initial_ver, vertex, adj: list[list[int]], edges: list[list[int]], visited: list[bool], result: list[set[tuple[int,int]]], minim: list[int], distance: int):

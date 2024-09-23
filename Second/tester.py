@@ -31,7 +31,7 @@ for item in data:
     case = item['test_case']
     print()
     try:
-        assert validate(result, deserialize(item['result']))
+        assert validate(result[1], deserialize(item['result']))
         print(f"Case {case} ======== OK")
     except:
         ans = item['result']
