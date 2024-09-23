@@ -4,7 +4,7 @@ import json
 def solve(query: str, alph: list, k: int):
     return sufix_balance(query, k)
 
-with open("3rd/test_cases.json") as file:
+with open("Therd/test_cases.json") as file:
     data = json.load(file)
 
 for item in data:
