@@ -93,7 +93,9 @@ def recursive_min(initial_ver, vertex, adj: list[list[int]], edges: list[list[in
     for adjacent in adj[vertex]:
         if visited[adjacent]: continue
         if minim[adjacent] == (distance+edges[adjacent][vertex]):
-            result[adjacent].add((max(vertex, adjacent), min(vertex, adjacent)))
+            temp = set()
+            temp.add((max(vertex, adjacent), min(vertex, adjacent)))
+            result[adjacent].union(temp)
             result[adjacent] = result[adjacent].union(result[vertex])
         elif minim[adjacent] > (distance+ edges[adjacent][vertex]):
             tup: tuple = ((max(vertex, adjacent), min(vertex, adjacent)))
