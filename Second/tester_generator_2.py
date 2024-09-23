@@ -39,30 +39,33 @@ def genrate_conected_graph(max_len, max_w):
         edges.append([0]*v_count)
     generate_adj(0, adj, visited, edges, max_w)
     desconected = [i for i in range(0, len(adj)) if len(adj[i]) == 0]
-    while(len(desconected) > 0):
-        connected = [i for i in range(0, len(adj)) if len(adj[i]) > 0]
-        node = rnd.randint(0, len(connected)-1)
-        edges[connected[0]][node] = edges[node][connected[0]] = rnd.randint(1, max_w)
-        adj[connected[0]].append(node)
-        adj[node].append(connected[0]) 
-        generate_adj(desconected[0], adj, visited, edges, max_w)
-        desconected = [i for i in range(0, len(adj)) if len(adj[i]) == 0]
-
+#    while(len(desconected) > 0):
+#        connected = [i for i in range(0, len(adj)) if len(adj[i]) > 0]
+#        node = rnd.randint(0, len(connected)-1)
+#        edges[connected[0]][node] = edges[node][connected[0]] = rnd.randint(1, max_w)
+#        adj[connected[0]].append(node)
+#        adj[node].append(connected[0]) 
+#        generate_adj(desconected[0], adj, visited, edges, max_w)
+#        desconected = [i for i in range(0, len(adj)) if len(adj[i]) == 0]
+#
         
     return adj, edges
 
 
 
 def generate_adj(pos: int, adj: list[list[int]], visited: list[bool], edges: list[list[int]], max_w):
-    if visited[pos]: return
+    if pos == 0: visited[pos] = True
     count = len(adj[pos])
     if count == 0:
         adj_count = rnd.randint(1, len(adj)-1)  
     else: 
         adj_count = algo = rnd.randint(0, len(adj)- len(adj[pos]) -1)
     for i in range(0, adj_count):
-        not_connected = [n for n in range(0, len(edges[pos])) if edges[pos][n] == 0 and n != pos]
-        connect = not_connected[rnd.randint(0, len(not_connected) -1)]
+        not_connected = [n for n in range(0, len(adj)) if not n in adj[pos] and n != pos]
+        if len(not_connected) == 0: continue
+        rand = rnd.randint(0, len(not_connected) -1)
+        connect = not_connected[rand]  
+        
         edges[pos][connect] = edges[connect][pos] = rnd.randint(1, max_w)
         adj[pos].append(connect)
         adj[connect].append(pos)
@@ -135,6 +138,8 @@ for i in range(0, len(adjacents)):
 
 
 
-var = minimun_path(2, test, edges_test)
-print(var)
-tester_generator(max_len=30)
+#var = minimun_path(2, test, edges_test)
+#print(var)
+tester_generator(max_len=10)
+#res, _ = genrate_conected_graph(10, 10)
+#print(res)
