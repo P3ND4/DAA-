@@ -1,6 +1,6 @@
 import math
 
-def min_path(adj: list[list[tuple[int, int]]]) -> dict:
+def min_path(adj: list[list[tuple[int, int]]]) -> list[list[int]]:
   matrix = build_matrix(len(adj))
   visited = [False]*len(adj)
   visited[0] = True
@@ -43,8 +43,8 @@ def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], no
     
     
     elif e < matrix[head][node][0]:
-      matrix[head][node] = (e, set(((head, node),)))
-      matrix[node][head] = (e, set(((head, node),)))
+      matrix[head][node] = (e, set(((min(head, node), max(node, head)),)))
+      matrix[node][head] = (e, set(((min(head, node), max(node, head)),)))
 
       for x in nodes_adds:
         if x != node and x != head:
@@ -52,23 +52,23 @@ def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], no
             aux = set(matrix[x][node][1])
             aux.add((min(head, node), max(head, node)))
             
-            if matrix[x][head][0] < matrix[x][node][0] + e:
-              matrix[x][head] = (matrix[x][node][0] + e, aux)
-              matrix[head][x] = (matrix[x][node][0] + e, aux)
-            
-            else:
+            if matrix[x][head][0] == matrix[x][node][0] + e:
               matrix[x][head] = (matrix[x][node][0] + e, matrix[x][head][1].union(aux))
               matrix[head][x] = (matrix[x][node][0] + e, matrix[head][x][1].union(aux))
+            
+            else:
+              matrix[x][head] = (matrix[x][node][0] + e, aux)
+              matrix[head][x] = (matrix[x][node][0] + e, aux)
 
           if matrix[x][node][0] > matrix[x][head][0] + e:
             aux = set(matrix[x][head][1])
             aux.add((head, node))
             
-            if matrix[x][node][0] < matrix[x][head][0] + e:
+            if matrix[x][node][0] == matrix[x][head][0] + e:
+              matrix[x][node] = (matrix[x][head][0] + e, matrix[x][node][1].union(aux))
+              matrix[node][x] = (matrix[x][head][0] + e, matrix[node][x][1].union(aux))
+              
+            else:
               matrix[x][node] = (matrix[x][head][0] + e, aux)
               matrix[node][x] = (matrix[x][head][0] + e, aux)
               
-            else:
-              matrix[x][node] = (matrix[x][head][0] + e, matrix[x][node][1].union(aux))
-              matrix[node][x] = (matrix[x][head][0] + e, matrix[node][x][1].union(aux))
-      
