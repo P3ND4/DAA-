@@ -96,7 +96,7 @@ def generate_cases(case = 100, max_len = 15):
         cases.append(test_case)
         case = case -1
 
-    with open('3rd/test_cases.json', 'w') as f:
+    with open('Third/test_cases.json', 'w') as f:
         json.dump(cases, f, indent=2)
 
 #print(permutations('jwjmgcrj', 1))

@@ -3,6 +3,10 @@ import math
 
 
 
+def tester_generator(n=100, max_len=30, max_2 = 100):
+    
+
+
 
 def genrate_conected_graph(max_len, max_w):
     v_count = rnd.randint(2, max_len)
