@@ -7,6 +7,9 @@ def sufix_balance(chain: str, k: int) -> str | int:
   return fix_balance(k, frec_list)
         
 def validate(chain: str, l: list[tuple], k: int) -> bool:
+  if k == 0:
+    return len(chain) == len(l)
+    
   max = 0
   min = len(chain) 
   
@@ -53,7 +56,10 @@ def fix_balance(k: int, frec: list) -> str:
           
           if frec[i][1] == 0:
             del_nodes += 1 
-            
+          
+          if j < 2: 
+            continue
+          
           if rest <= 0:
             break
         
@@ -89,7 +95,7 @@ def frec(chain: str) -> list:
   
   temp = sorted(temp, key=lambda x:x[0])[-1::-1]
   
-  max = 0
+  max = temp[0][1]
   index = 0
   result.append((temp[0][0], temp[0][1], 0))
   
