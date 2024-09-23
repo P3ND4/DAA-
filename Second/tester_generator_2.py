@@ -10,12 +10,12 @@ def tester_generator(n=100, max_len=30, max_w = 100):
         result: list[list] = []
         for _ in adj: result.append([])
         for i in range(0, len(adj)):
-            res = minimun_path(i, adj, edges)
+            path, minim = minimun_path(i, adj, edges)
             for j in range(0, len(adj)):
                 if i == j:
                     result[i].append(0)
                     continue
-                result[i].append(res[1][j]) 
+                result[i].append(minim[j]) 
 
         test_case = {
             "test_case": f'{100-n+1}',
