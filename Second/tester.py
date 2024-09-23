@@ -1,10 +1,16 @@
+from solution import min_path
 import json
 
 def deserialize(serialized: list[list[str]]):
     return [[int(x) for x in y] for y in serialized]
 
 def solve(adj: list[list[int]], edges: list[list[int]]):
-    pass
+    g = []
+    
+    for i in range(len(adj)):
+        g.append(list(map(lambda x: (x, edges[i][x]), adj[i])))
+
+    return min_path(g)
 
 def validate(solution: list[list[int]], correct: list[list[int]]):
     if len(solution) != len(correct): return False
