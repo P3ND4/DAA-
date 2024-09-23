@@ -18,9 +18,11 @@ def freq_dif(string):
 
 def permutations(text: str, k: int) -> tuple[bool, str]:
   contain = set()
-  return permutations_rec(text, contain, '', k) if freq_dif(text) <= k else False, text
+  if freq_dif(text) > k: return False, text
+  result = permutations_rec(text, contain, '', k)
+  return result
 
-def permutations_rec(text: str, contain: set, carry: str, k: int) -> None:
+def permutations_rec(text: str, contain: set, carry: str, k: int) -> tuple[bool, str]:
   if text == '':
     if not carry in contain:
       contain.add(carry)
@@ -49,8 +51,8 @@ def validator(query, k):
             heap.extract_min()
             minim = heap.peek()
         if(maxim - minim[1] > k):
-           return False, query[-1::-1]
-    return True, query[-1::-1]
+           return (False, query[-1::-1])
+    return (True, query[-1::-1])
                
 def organize_string(input_string):
     char_count = {}
@@ -73,7 +75,7 @@ def generate_cases(case = 100, max_len = 15):
     cases = []
     while(case):
         boolean_mask = [False]*len(alphabet)
-        str_len = rnd.randint(1, max_len)
+        str_len = 9 #rnd.randint(1, max_len)
         str_case = ''
         symbols_set = []
         for i in range (0, str_len):
@@ -85,7 +87,7 @@ def generate_cases(case = 100, max_len = 15):
         print(str_case)
         print(symbols_set)
         query = organize_string(str_case)
-        k = rnd.randint(1, len(str_case))
+        k = 1 #rnd.randint(1, len(str_case))
         ans = permutations(query, k)
         ans = ans[1] if ans[0] else -1
         test_case = {'id': f'{case}',
@@ -99,8 +101,8 @@ def generate_cases(case = 100, max_len = 15):
     with open('Third/test_cases.json', 'w') as f:
         json.dump(cases, f, indent=2)
 
-#print(permutations('jwjmgcrj', 1))
-generate_cases(max_len=100)
+#print(permutations('aabbccc', 1))
+generate_cases(max_len=150)
 
 
 

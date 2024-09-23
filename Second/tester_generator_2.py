@@ -1,6 +1,7 @@
 import random as rnd
 import math
 import json
+#from tester import deserialize
 
 def tester_generator(n=100, max_len=30, max_w = 100):
     test_cases = []
@@ -93,7 +94,7 @@ def recursive_min(initial_ver, vertex, adj: list[list[int]], edges: list[list[in
         if visited[adjacent]: continue
         if minim[adjacent] == (distance+edges[adjacent][vertex]):
             result[adjacent].add((max(vertex, adjacent), min(vertex, adjacent)))
-            result[adjacent].union(result[vertex])
+            result[adjacent] = result[adjacent].union(result[vertex])
         elif minim[adjacent] > (distance+ edges[adjacent][vertex]):
             tup: tuple = ((max(vertex, adjacent), min(vertex, adjacent)))
             result[adjacent] = set().union(result[vertex])
@@ -122,7 +123,6 @@ adjacents = [
 
 
 
-
 test = []*len(adjacents)
 for _ in adjacents: test.append([])
 
@@ -136,8 +136,7 @@ for i in range(0, len(adjacents)):
 
 
 
-
-#var = minimun_path(0, deserialize(case_7_adj), deserialize(case_7_edges))
+#var = minimun_path(2, deserialize(adj_3), deserialize(edges_3))
 #print(var)
 tester_generator(max_len=10, max_w=10)
 #res, _ = genrate_conected_graph(10, 10)

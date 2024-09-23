@@ -12,7 +12,7 @@ for item in data:
     try:
         assert str(result) == item['ans']
         case = item['id']
-        print(f"Case {case} ======== OK")
+        #print(f"Case {case} ======== OK")
     except:
         case = item['id']
         ans = item['ans']
