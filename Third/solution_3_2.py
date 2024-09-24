@@ -34,13 +34,14 @@ def greedy_sufix(text: str, symb: list, k: int):
                 if max_freq.peek()[0] == symbol:
                     max_freq.extract_min() 
                 max_freq.insert(symbol, -freq[symbol])
+                break
     return result         
             
         
 
         
         
-    
+print(greedy_sufix("bbikkpprs", ["p", "b", "s", "k", "i", "r"], 1) )
 
 
     
