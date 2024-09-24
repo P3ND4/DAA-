@@ -27,11 +27,11 @@ with open("Second/test_cases_2.json") as file:
     data = json.load(file)
 
 for item in data:
-    result = solve(deserialize(item['adj']), deserialize(item["edges"]))
     case = item['test_case']
     print()
+    result = solve(deserialize(item['adj']), deserialize(item["edges"]))
     try:
-        assert result == [int(x) for x in case]  #validate(dist, deserialize(item['result']))
+        assert validate(result,  deserialize(item['result']))  #validate(dist, deserialize(item['result']))
         print(f"Case {case} ======== OK")
     except:
         ans = item['result']
