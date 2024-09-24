@@ -36,7 +36,8 @@ def adj_list_build(edges: list[list[int]]):
 
     for i in range(0, len(edges)):
         for j in range(0, len(edges)):
-            new_adj_list[i].append(j)
+            if edges[i][j]:
+                new_adj_list[i].append(j)
     return new_adj_list
 
 def genrate_conected_graph(max_len, max_w):
@@ -58,7 +59,7 @@ def genrate_conected_graph(max_len, max_w):
         desconected = [i for i in range(0, len(adj)) if len(adj[i]) == 0]
     adj = adj_list_build(edges)
         
-    return adj
+    return adj, edges
 
 
 
@@ -94,7 +95,7 @@ def minimun_path(vertex:int, adj: list[list[int]], edges: list[list[int]]):
     distance = [math.inf]*len(adj)
     distance[vertex] = 0
     recursive_min(vertex, vertex, adj, edges, [False]*len(adj), result,distance, 0)
-    return result, distance
+    return result
 
 
 def recursive_min(initial_ver, vertex, adj: list[list[int]], edges: list[list[int]], visited: list[bool], result: list[set[tuple[int,int]]], minim: list[int], distance: int):
