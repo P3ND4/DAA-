@@ -30,7 +30,6 @@ def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], no
     if not visited[node]:
       nodes_adds.append(node)
       visited[node] = True
-      fix_adj(head, adj[node])
     
       for x in nodes_adds[:-1]:
         aux = set(matrix[x][head][1])
@@ -52,10 +51,12 @@ def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], no
             if matrix[x][head][0] == matrix[x][node][0] + e:
               matrix[x][head] = (matrix[x][node][0] + e, matrix[x][head][1].union(aux))
               matrix[head][x] = (matrix[x][node][0] + e, matrix[head][x][1].union(aux))
+              fix_path(matrix, nodes_adds, x, node)
             
             else:
               matrix[x][head] = (matrix[x][node][0] + e, aux)
               matrix[head][x] = (matrix[x][node][0] + e, aux)
+              fix_path(matrix, nodes_adds, x, node)
 
           elif matrix[x][node][0] >= matrix[x][head][0] + e:
             aux = set(matrix[x][head][1])
@@ -64,15 +65,25 @@ def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], no
             if matrix[x][node][0] == matrix[x][head][0] + e:
               matrix[x][node] = (matrix[x][head][0] + e, matrix[x][node][1].union(aux))
               matrix[node][x] = (matrix[x][head][0] + e, matrix[node][x][1].union(aux))
+              fix_path(matrix, nodes_adds, x, head)
               
             else:
               matrix[x][node] = (matrix[x][head][0] + e, aux)
               matrix[node][x] = (matrix[x][head][0] + e, aux)
+              fix_path(matrix, nodes_adds, x, head)
 
-def fix_adj(head: int, l: list[tuple]):
-  for i in range(len(l)):
-    if l[i][0] == head:
-      aux = l[i]
-      del l[i]
-      l.append(aux)
-      return
+def fix_path(matrix: list[list[tuple]], nodes: list, start: int, inter: list):
+  for node in nodes:
+    if node != start:
+      if matrix[start][node][0] >= matrix[start][inter][0] + matrix[inter][node][0]:
+        aux = set(matrix[start][inter][1])
+        aux = aux.union(matrix[inter][node][1])
+
+        if matrix[start][node][0] == matrix[start][inter][0] + matrix[inter][node][0]:
+          matrix[start][node] = (matrix[start][node][0], matrix[start][node][1].union(aux))
+          matrix[node][start] = (matrix[start][node][0], matrix[start][node][1].union(aux))
+
+        else:
+          matrix[start][node] = (matrix[start][inter][0] + matrix[inter][node][0], aux)
+          matrix[node][start] = (matrix[start][inter][0] + matrix[inter][node][0], aux)
+      
