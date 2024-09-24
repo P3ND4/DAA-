@@ -1,7 +1,9 @@
 import random as rnd
 import math
 import json
-from tester import deserialize
+
+
+#########----------Generador de casos de prueba------------------###############################
 
 def tester_generator(n=100, max_len=30, max_w = 100):
     test_cases = []
@@ -31,6 +33,8 @@ def tester_generator(n=100, max_len=30, max_w = 100):
         json.dump(test_cases, f, indent=2)
 
 
+#####################################################################################################
+
 
 def adj_list_build(edges: list[list[int]]):
     new_adj_list = []
@@ -41,6 +45,9 @@ def adj_list_build(edges: list[list[int]]):
             if edges[i][j]:
                 new_adj_list[i].append(j)
     return new_adj_list
+
+
+#################---------------Generador de grafos conexos----------------#########################
 
 def genrate_conected_graph(max_len, max_w):
     v_count = rnd.randint(2, max_len)
@@ -63,8 +70,6 @@ def genrate_conected_graph(max_len, max_w):
         
     return adj, edges
 
-
-
 def generate_adj(pos: int, adj: list[list[int]], visited: list[bool], edges: list[list[int]], max_w):
     if pos == 0: visited[pos] = True
     count = len(adj[pos])
@@ -85,11 +90,11 @@ def generate_adj(pos: int, adj: list[list[int]], visited: list[bool], edges: lis
             visited[connect] = True
             generate_adj(connect, adj, visited, edges, max_w)
 
+#############################################################################################
 
 
 
-#print(genrate_conected_graph(10, 10)[1])
-
+###############---------Fuerza Bruta-----------------#####################################
 
 def minimun_path(vertex:int, adj: list[list[int]], edges: list[list[int]]):
     result:list[set[tuple[int, int]]] = []*len(adj)
@@ -119,122 +124,7 @@ def recursive_min(initial_ver, vertex, adj: list[list[int]], edges: list[list[in
         recursive_min(initial_ver, adjacent, adj, edges, visited, result, minim, distance+edges[adjacent][vertex])
     visited[vertex] = False
 
-
-
-
-
-adjacents = [
-    [(1,25), (5, 5)],
-    [(0, 25), (8, 5)],
-    [(5, 10), (8, 10), (3, 3), (4,30)],
-    [(2, 3), (4,27)],
-    [(2,30), (3,27)],
-    [(0,5),(2, 10),(6, 30)],
-    [(5, 30), (7, 1)],
-    [(6, 1)],
-    [(1, 5), (2, 10)]
-    ]
-
-
-
-test = []*len(adjacents)
-for _ in adjacents: test.append([])
-
-edges_test = []*len(adjacents)
-for _ in adjacents: edges_test.append([0]*len(adjacents)) 
-
-for i in range(0, len(adjacents)):
-    for ad, dist in adjacents[i]:
-        test[i].append(ad)
-        edges_test[i][ad] = dist
-
-
-
-
-adj_2 = [
-      [
-        "4",
-        "5",
-        "7"
-      ],
-      [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "9"
-      ],
-      [
-        "1",
-        "4",
-        "5",
-        "6",
-        "7",
-        "9"
-      ],
-      [
-        "1",
-        "4",
-        "5",
-        "6",
-        "7"
-      ],
-      [
-        "0",
-        "1",
-        "2",
-        "3",
-        "5",
-        "7",
-        "8",
-        "9"
-      ],
-      [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      [
-        "1",
-        "2",
-        "3",
-        "5",
-        "7",
-        "9"
-      ],
-      [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "8",
-        "9"
-      ],
-      [
-        "4",
-        "5",
-        "7"
-      ],
-      [
-        "1",
-        "2",
-        "4",
-        "5",
-        "6",
-        "7"
-      ]
-    ]
+#####################################################################################################################
 
 
 
@@ -242,137 +132,4 @@ adj_2 = [
 
 
 
-
-edges_2 =  [
-      [
-        "0",
-        "0",
-        "0",
-        "0",
-        "1",
-        "6",
-        "0",
-        "5",
-        "0",
-        "0"
-      ],
-      [
-        "0",
-        "0",
-        "4",
-        "9",
-        "3",
-        "10",
-        "9",
-        "8",
-        "0",
-        "9"
-      ],
-      [
-        "0",
-        "4",
-        "0",
-        "0",
-        "8",
-        "4",
-        "6",
-        "3",
-        "0",
-        "6"
-      ],
-      [
-        "0",
-        "9",
-        "0",
-        "0",
-        "6",
-        "1",
-        "8",
-        "9",
-        "0",
-        "0"
-      ],
-      [
-        "1",
-        "3",
-        "8",
-        "6",
-        "0",
-        "9",
-        "0",
-        "7",
-        "5",
-        "1"
-      ],
-      [
-        "6",
-        "10",
-        "4",
-        "1",
-        "9",
-        "0",
-        "4",
-        "9",
-        "1",
-        "1"
-      ],
-      [
-        "0",
-        "9",
-        "6",
-        "8",
-        "0",
-        "4",
-        "0",
-        "1",
-        "0",
-        "4"
-      ],
-      [
-        "5",
-        "8",
-        "3",
-        "9",
-        "7",
-        "9",
-        "1",
-        "0",
-        "1",
-        "4"
-      ],
-      [
-        "0",
-        "0",
-        "0",
-        "0",
-        "5",
-        "1",
-        "0",
-        "1",
-        "0",
-        "0"
-      ],
-      [
-        "0",
-        "9",
-        "6",
-        "0",
-        "1",
-        "1",
-        "4",
-        "4",
-        "0",
-        "0"
-      ]
-    ]
-    
-
-
-
-
-
-var = minimun_path(1, deserialize(adj_2), deserialize(edges_2))
-print(var)
 #tester_generator(n= 1000, max_len=10, max_w=10)
-#res, _ = genrate_conected_graph(10, 10)
-#print(var)
