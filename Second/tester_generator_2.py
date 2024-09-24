@@ -10,12 +10,12 @@ def tester_generator(n=100, max_len=30, max_w = 100):
         result: list[list] = []
         for _ in adj: result.append([])
         for i in range(0, len(adj)):
-            path, dista = minimun_path(i, adj, edges)
+            path = minimun_path(i, adj, edges)
             for j in range(0, len(adj)):
                 if i == j:
                     result[i].append(0)
                     continue
-                result[i].append(dista[j]) 
+                result[i].append(len(path[j])) 
 
         test_case = {
             "test_case": f'{100-n+1}',
@@ -27,6 +27,17 @@ def tester_generator(n=100, max_len=30, max_w = 100):
         n -= 1           
     with open('Second/test_cases_2.json', 'w') as f:
         json.dump(test_cases, f, indent=2)
+
+
+
+def adj_list_build(edges: list[list[int]]):
+    new_adj_list = []
+    for _ in edges: new_adj_list.append([])
+
+    for i in range(0, len(edges)):
+        for j in range(0, len(edges)):
+            new_adj_list[i].append(j)
+    return new_adj_list
 
 def genrate_conected_graph(max_len, max_w):
     v_count = rnd.randint(2, max_len)
@@ -40,16 +51,14 @@ def genrate_conected_graph(max_len, max_w):
     generate_adj(0, adj, visited, edges, max_w)
     desconected = [i for i in range(0, len(adj)) if len(adj[i]) == 0]
     while(len(desconected) > 0):
-        connected = [i for i in range(0, len(adj)) if len(adj[i]) > 0]
-        node = rnd.randint(0, len(connected)-1)
-        edges[connected[0]][node] = edges[node][connected[0]] = rnd.randint(1, max_w)
-        adj[connected[0]].append(node)
-        adj[node].append(connected[0]) 
-        generate_adj(desconected[0], adj, visited, edges, max_w)
+        for i in range(0, len(adj)):
+            del edges[i][desconected[0]]
+        del edges[desconected[0]]
+        del adj[desconected[0]]
         desconected = [i for i in range(0, len(adj)) if len(adj[i]) == 0]
-
+    adj = adj_list_build(edges)
         
-    return adj, edges
+    return adj
 
 
 
