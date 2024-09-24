@@ -7,7 +7,7 @@ def min_path(adj: list[list[tuple[int, int]]]) -> list[list[int]]:
   min_path_rec(adj, matrix, [0], visited, 0)  
   
   for i in range(len(matrix)):
-    matrix[i] = list(map(lambda x: x[0], matrix[i]))
+    matrix[i] = list(map(lambda x: len(x[1]), matrix[i]))
   
   return matrix
     
