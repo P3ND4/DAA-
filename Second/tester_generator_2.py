@@ -1,10 +1,12 @@
 import random as rnd
 import math
 import json
-#from tester import deserialize
+from tester import deserialize
 
 def tester_generator(n=100, max_len=30, max_w = 100):
     test_cases = []
+    first = n
+
     while(n):
         adj, edges = genrate_conected_graph(max_len, max_w)
         result: list[list] = []
@@ -16,9 +18,9 @@ def tester_generator(n=100, max_len=30, max_w = 100):
                     result[i].append(0)
                     continue
                 result[i].append(len(path[j])) 
-
+        
         test_case = {
-            "test_case": f'{100-n+1}',
+            "test_case": f'{first-n+1}',
             "adj": [[str(x) for x in y] for y in adj],
             "edges": [[str(x) for x in y] for y in edges],
             "result": [[str(x) for x in y] for y in result]
@@ -105,7 +107,7 @@ def recursive_min(initial_ver, vertex, adj: list[list[int]], edges: list[list[in
         if minim[adjacent] == (distance+edges[adjacent][vertex]):
             temp = set()
             temp.add((max(vertex, adjacent), min(vertex, adjacent)))
-            result[adjacent].union(temp)
+            result[adjacent] = result[adjacent].union(temp)
             result[adjacent] = result[adjacent].union(result[vertex])
         elif minim[adjacent] > (distance+ edges[adjacent][vertex]):
             tup: tuple = ((max(vertex, adjacent), min(vertex, adjacent)))
@@ -148,8 +150,229 @@ for i in range(0, len(adjacents)):
 
 
 
-#var = minimun_path(2, deserialize(adj_3), deserialize(edges_3))
-#print(var)
-tester_generator(max_len=10, max_w=10)
+
+adj_2 = [
+      [
+        "4",
+        "5",
+        "7"
+      ],
+      [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      [
+        "1",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      [
+        "1",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      [
+        "0",
+        "1",
+        "2",
+        "3",
+        "5",
+        "7",
+        "8",
+        "9"
+      ],
+      [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      [
+        "4",
+        "5",
+        "7"
+      ],
+      [
+        "1",
+        "2",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    ]
+
+
+
+
+
+
+
+
+edges_2 =  [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "6",
+        "0",
+        "5",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "4",
+        "9",
+        "3",
+        "10",
+        "9",
+        "8",
+        "0",
+        "9"
+      ],
+      [
+        "0",
+        "4",
+        "0",
+        "0",
+        "8",
+        "4",
+        "6",
+        "3",
+        "0",
+        "6"
+      ],
+      [
+        "0",
+        "9",
+        "0",
+        "0",
+        "6",
+        "1",
+        "8",
+        "9",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "3",
+        "8",
+        "6",
+        "0",
+        "9",
+        "0",
+        "7",
+        "5",
+        "1"
+      ],
+      [
+        "6",
+        "10",
+        "4",
+        "1",
+        "9",
+        "0",
+        "4",
+        "9",
+        "1",
+        "1"
+      ],
+      [
+        "0",
+        "9",
+        "6",
+        "8",
+        "0",
+        "4",
+        "0",
+        "1",
+        "0",
+        "4"
+      ],
+      [
+        "5",
+        "8",
+        "3",
+        "9",
+        "7",
+        "9",
+        "1",
+        "0",
+        "1",
+        "4"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "5",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "9",
+        "6",
+        "0",
+        "1",
+        "1",
+        "4",
+        "4",
+        "0",
+        "0"
+      ]
+    ]
+    
+
+
+
+
+
+var = minimun_path(1, deserialize(adj_2), deserialize(edges_2))
+print(var)
+#tester_generator(n= 1000, max_len=10, max_w=10)
 #res, _ = genrate_conected_graph(10, 10)
-#print(res)
+#print(var)
