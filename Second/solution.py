@@ -4,7 +4,7 @@ def min_path(adj: list[list[tuple[int, int]]]) -> list[list[int]]:
   matrix = build_matrix(len(adj))
   visited = [False]*len(adj)
   visited[0] = True
-  min_path_rec(adj, matrix, [0], visited, 0)  
+  min_path_rec(adj, matrix, [0], set(), visited, 0)  
   
   for i in range(len(matrix)):
     matrix[i] = list(map(lambda x: len(x[1]), matrix[i]))
@@ -22,31 +22,36 @@ def build_matrix(size: int) -> list[list[tuple]]:
       
   return temp
 
-def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], nodes_adds: list, visited: list[bool], head: int): 
+def min_path_rec(adj: list[list[tuple[int, int]]], matrix: list[list[tuple]], nodes_adds: list[int], 
+                edges: set, visited: list[bool], head: int): 
   for element in adj[head]:  
     node = element[0]
     e = element[1]
+    edge = (min(head, node), max(head, node))
     
     if not visited[node]:
       nodes_adds.append(node)
+      edges.add(edge)
       visited[node] = True
     
       for x in nodes_adds[:-1]:
         aux = set(matrix[x][head][1])
-        aux.add((min(head, node), max(head, node)))
+        aux.add(edge)
         matrix[x][node] = (matrix[x][head][0] + e, aux) 
       
       for x in nodes_adds[:-1]:
         matrix[node][x] = (matrix[x][node][0], matrix[x][node][1])
         
-      min_path_rec(adj, matrix, nodes_adds, visited, node)
+      min_path_rec(adj, matrix, nodes_adds, edges, visited, node)
     
-    else:
+    elif not edge in edges:
+      edges.add(edge)
+      
       for x in nodes_adds:
         if x != head:
           if matrix[x][head][0] >= matrix[x][node][0] + e:
             aux = set(matrix[x][node][1])
-            aux.add((min(head, node), max(head, node)))
+            aux.add(edge)
             
             if matrix[x][head][0] == matrix[x][node][0] + e:
               matrix[x][head] = (matrix[x][node][0] + e, matrix[x][head][1].union(aux))
