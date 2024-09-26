@@ -1,4 +1,5 @@
-from solution import min_path
+from solution_1 import min_path
+from solution_2 import floyd_warshall
 import json
 
 def deserialize(serialized: list[list[str]]):
@@ -11,6 +12,7 @@ def solve(adj: list[list[int]], edges: list[list[int]]):
         g.append(list(map(lambda x: (x, edges[i][x]), adj[i])))
 
     return min_path(g)
+    #return floyd_warshall(g)
 
 def validate(solution: list[list[int]], correct: list[list[int]]):
     if len(solution) != len(correct): return False
